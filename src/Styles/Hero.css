@@ -1,0 +1,115 @@
+.hero {
+    height: 65vh;
+    width: 100%;
+    gap: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    background-image: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/2e0c64478e5d553e85ef5403/sd.jpg");
+    background-position: center;
+    background-size: cover;
+
+    background-color: white;
+}
+
+.hero__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+
+.iconbox {
+    width: 250px;
+    height: 200px;
+    background-color: white;
+
+    border-radius: 20px 20px 0 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icon__logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon__text {
+    color: black;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.hero--largescreen{
+    display: flex;
+}
+.hero--mediumscreen {
+    display: none;
+}
+.hero--smallscreen {
+    display: none;
+}
+
+
+
+.lower__icons--medium {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+}
+
+
+
+.lower__icons--small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: white;
+
+}
+
+.icon__img {
+    width: 60px;
+
+}
+
+
+@media screen and (max-width: 1150px) {
+    .hero--largescreen {
+        display: none;
+    }
+    .hero--mediumscreen {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    .hero--mediumscreen {
+        display: none;
+    }
+    .hero--smallscreen {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
