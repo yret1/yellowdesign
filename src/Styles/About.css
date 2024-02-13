@@ -1,0 +1,101 @@
+.about {
+    background-color: yellow;
+
+    padding: 40px;
+
+    padding-bottom: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.quotebox {
+    color: black;
+}
+
+.about__title--text {
+    color: black;
+    font-size: 2rem;
+}
+
+.about__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    place-items: center;
+
+    width:80vw;
+}
+
+.grid__item {
+    height: 250px;
+    width: 250px;
+
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.grid__span {
+    color: black;
+    font-size: 2rem;
+}
+
+.imgtop {
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/cb90b2e84307548d92caf296/trrt.jpg");
+}
+
+.botimgone {
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/7b41792002e653d393caf40e/vbvbvbvb.jpg");
+
+}
+
+.botimg2{
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/5f2cac1f3cfd566a91b4507b/gffgfgfg-min.jpg");
+    
+}
+
+.top {
+    background-color: white;
+    color: black;
+}
+.bot {
+    color: white;
+    background-color: black;
+}
+
+
+
+@media screen and (max-width: 1150px) {
+
+    .about__grid {
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+}
+
+
+@media screen and (max-width: 750px) {
+    .about__grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+
+        height: min-content;
+    }
+}
